@@ -1,4 +1,4 @@
-# CNX — Coherence Nexus (Experimental)
+# CNX - Coherence Nexus (Experimental)
 
 CNX is an experimental AI control layer designed to sit between users/applications and large language models (LLMs) or agent systems.
 
@@ -33,10 +33,23 @@ Most current deployments:
 
 CNX explores a different approach:
 
-> Intelligence can scale — but control must remain invariant.
+> Intelligence can scale, but control must remain invariant.
 
 ---
 
 ## Architecture Overview
 
-CNX is structured in layers:
+CNX is structured as a layered control system:
+
+- **Gateway** - receives requests from users or applications  
+- **Wrapper** - applies enforcement, refusal, and control logic  
+- **CCF** - validates outputs against defined constraints  
+- **Model Execution Layer** - executes the underlying LLM or agent  
+
+In simplified form:
+
+`Client -> CNX Gateway -> Wrapper -> CCF -> Model`
+
+The separation between these layers allows control to remain independent from model behavior.
+
+CNX is designed so that intelligence and control do not collapse into the same layer.
