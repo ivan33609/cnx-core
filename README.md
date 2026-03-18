@@ -1,3 +1,6 @@
+> **Status:** Experimental — Not production-ready. For evaluation only.
+
+
 # CNX - Coherence Nexus (Experimental)
 
 CNX is an experimental AI control layer designed to sit between users/applications and large language models (LLMs) or agent systems.
